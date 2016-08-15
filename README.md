@@ -1,5 +1,5 @@
-# note-model
-Makers week 7 - further JavaScript
+# Note App
+Makers Week 7 - Further JavaScript
 
 Note model specification
 
