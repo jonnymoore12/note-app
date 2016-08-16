@@ -5,7 +5,6 @@ var new_note = new Note("test");
   // Originally no argument on instantiation, but we changed things a bit
   function NoteList(new_note) {
     this.notes = [];
-    pushNote(new_note);
   }
 
   NoteList.prototype.pushNote = function (note) {
@@ -15,6 +14,11 @@ var new_note = new Note("test");
   NoteList.prototype.createNote = function (text) {
     this.notes.push(new Note(text));
   };
+
+  NoteList.prototype.getNotes = function () {
+    return this.notes;
+  };
+
 
   exports.NoteList = NoteList;
 })(this);

@@ -2,17 +2,23 @@ var NoteList = require("./note-list-model.js").NoteList;
 var note_list = new NoteList();
 
 
-console.log(note_list.notes);
 (function(exports){
-  function NoteListView(note_list){
-    this.note_list_model = note_list;
+  function NoteListView(note_list_model){
+    this.note_list = note_list_model;
   }
 
+  NoteListView.prototype.getNoteList = function () {
+    return this.note_list
+  };
+
   NoteListView.prototype.viewNotes = function () {
-    var notes_array = this.note_list_model.notes
+    var notes_array = this.getNoteList().getNotes()
+    var html_string = "<ul>"
     notes_array.forEach(function(note){
-      return("<ul><li><div>" + note.text + "</div></li></ul>");
+      html_string += ("<li><div>" + note.text + "</div></li>")
     });
+    html_string += "</ul>"
+    return html_string;
   };
 
   exports.NoteListView = NoteListView;
