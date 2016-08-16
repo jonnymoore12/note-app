@@ -4,7 +4,9 @@ var Note = require("../models/note-model.js").Note;
 
 
 (function testThatListHasNotes() {
-  var note = new Note();
+  // We were coming back to this, changing NoteList to be
+  // instantiated with an argument.
+  var note = new Note("tester");
   var note_list = new NoteList();
   note_list.pushNote(note);
   assert.isTrue(note_list.notes.includes(note));
