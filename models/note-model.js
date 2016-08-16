@@ -9,6 +9,5 @@
   };
 
   exports.Note = Note;
-  // exports.getText = getText;
 
 })(this);

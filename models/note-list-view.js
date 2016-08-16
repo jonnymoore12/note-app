@@ -1,6 +1,4 @@
 var NoteList = require("./note-list-model.js").NoteList;
-var note_list = new NoteList();
-
 
 (function(exports){
   function NoteListView(note_list_model){

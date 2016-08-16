@@ -4,8 +4,6 @@ var NoteList = require("../models/note-list-model.js").NoteList;
 var Note = require("../models/note-model.js").Note;
 
 
-
-
 (function noteListViewInstantiatedWithNoteList(){
   var note = new Note('hello');
   var note_list = new NoteList();

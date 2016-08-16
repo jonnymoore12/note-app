@@ -2,7 +2,6 @@ var assert = require("./asserts");
 var NoteList = require("../models/note-list-model.js").NoteList;
 var Note = require("../models/note-model.js").Note;
 
-
 (function listHasNotes() {
   var note = new Note("tester");
   var note_list = new NoteList();
@@ -16,7 +15,6 @@ var Note = require("../models/note-model.js").Note;
   note_list.pushNote(note);
   assert.isTrue(note_list.getNotes()[0] === note);
 })(this);
-
 
 (function canCreateNote(){
   var note_list = new NoteList();
