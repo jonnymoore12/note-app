@@ -8,7 +8,6 @@
 (function(exports){
 
 function NoteController(notelist){
-  notelist.createNote('Favourite drink: seltzer')
   this.noteListView = new NoteListView(noteList);
 };
 
