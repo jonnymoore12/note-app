@@ -1,5 +1,4 @@
 // var Note = require("./note-model.js").Note;
-var new_note = new Note("test");
 
 (function(exports) {
   function NoteList() {
