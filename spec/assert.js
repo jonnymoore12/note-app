@@ -7,5 +7,6 @@
     }
   };
 
-  exports.isTrue = isTrue;
+  // exports.isTrue = isTrue;
+  exports.assert = {isTrue: isTrue};
 })(this);

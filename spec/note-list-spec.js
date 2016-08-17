@@ -1,11 +1,8 @@
-var assert = require("./asserts");
-var NoteList = require("../models/note-list-model.js").NoteList;
-var Note = require("../models/note-model.js").Note;
-
 (function listHasNotes() {
   var note = new Note("tester");
   var note_list = new NoteList();
   note_list.pushNote(note);
+  console.log("listHasNotes");
   assert.isTrue(note_list.notes.includes(note));
 })(this);
 
@@ -13,6 +10,7 @@ var Note = require("../models/note-model.js").Note;
   var note = new Note("hello");
   var note_list = new NoteList();
   note_list.pushNote(note);
+  console.log("canGetNotes");
   assert.isTrue(note_list.getNotes()[0] === note);
 })(this);
 
@@ -20,5 +18,6 @@ var Note = require("../models/note-model.js").Note;
   var note_list = new NoteList();
   note_list.createNote("Text");
   var note_element = note_list.notes[0];
+  console.log("canCreateNotes");
   assert.isTrue(note_element.text === "Text");
 })(this);
