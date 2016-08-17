@@ -1,5 +1,3 @@
-// var Note = require("./note-model.js").Note;
-
 (function(exports) {
   function NoteList() {
     this.notes = [];
