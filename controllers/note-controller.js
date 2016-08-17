@@ -7,10 +7,9 @@
 
 (function(exports){
 
-function NoteController(){
-var noteList = new NoteList();
-noteList.createNote('Favourite drink: seltzer')
-this.noteListView = new NoteListView(noteList);
+function NoteController(notelist){
+  notelist.createNote('Favourite drink: seltzer')
+  this.noteListView = new NoteListView(noteList);
 };
 
 NoteController.prototype.displayNotes = function(){
