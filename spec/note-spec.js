@@ -8,4 +8,9 @@ describe('Note',function(){
     var note_instance = new Note("My favourite language is JavaScript");
     isTrue(note_instance.getText() === "My favourite language is JavaScript");
   });
+
+  it('have Ids', function(){
+    var note = new Note('Yo!');
+    isTrue(note.id === note.getId());
+  });
 });
