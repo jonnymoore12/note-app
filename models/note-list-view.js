@@ -17,7 +17,6 @@
                       "</a></div></li>");
     });
     html_string += "</ul>"
-    // console.log("note list view's" + html_string);
     return html_string;
   };
 

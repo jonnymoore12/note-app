@@ -1,4 +1,4 @@
 var noteList = new NoteList();
-noteList.createNote("Favourite drink: cola");
+noteList.createNote("To do list: 1.Weekend challenge, 2. Walk the dog.");
 var controller = new NoteController(noteList);
 controller.insertHTML();

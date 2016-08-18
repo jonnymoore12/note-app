@@ -12,9 +12,14 @@
     this._getAppElement().innerHTML = this.view.viewNotes();
   };
 
-  NoteController.prototype.showNoteForCurrentPage = function () {
-    this.showNote(this.getNoteFromURL(window.location));
-  };
+  // NoteController.prototype.submitListener = function () {
+  //   document.addEventListener("submit", function(submitForm) {
+  //   var text = document.getElementById("text").value
+  //   submitForm.preventDefault();
+  //   controller.list.createNote("text")
+  //   controller.insertHTML()
+  //   });
+  // };
 
   exports.NoteController = NoteController;
 })(this);
