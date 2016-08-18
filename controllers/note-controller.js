@@ -1,14 +1,16 @@
 (function(exports){
+  function NoteController(noteList){
+    this.list = noteList;
+  };
 
-function NoteController(notelist){
-  this.noteListView = new NoteListView(noteList);
-};
+  NoteController.prototype._getAppElement = function () {
+    return document.getElementById("app");
+  };
 
-NoteController.prototype.displayNotes = function(){
-  var element = document.getElementById('app');
-  element.innerHTML = this.noteListView.viewNotes();
-}
+  NoteController.prototype.insertHTML = function () {
+    this.view = new NoteListView(this.list);
+    this._getAppElement().innerHTML = this.view.viewNotes();
+  };
 
-exports.NoteController = NoteController;
-
+  exports.NoteController = NoteController;
 })(this);
