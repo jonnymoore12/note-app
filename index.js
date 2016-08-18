@@ -1,5 +1,4 @@
-var note = new Note("I'm not telling you my fave drink");
 var noteList = new NoteList();
-noteList.pushNote(note);
+noteList.createNote("Favourite drink: cola");
 var controller = new NoteController(noteList);
-controller.displayNotes();
+controller.insertHTML();

@@ -15,6 +15,7 @@ describe('Note Controller', function(){
     controller._getAppElement = function(){
       return element;
     };
+
     controller.insertHTML();
     isTrue(view.viewNotes() === element.innerHTML);
   });
