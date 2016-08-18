@@ -12,5 +12,9 @@
     this._getAppElement().innerHTML = this.view.viewNotes();
   };
 
+  NoteController.prototype.showNoteForCurrentPage = function () {
+    this.showNote(this.getNoteFromURL(window.location));
+  };
+
   exports.NoteController = NoteController;
 })(this);
