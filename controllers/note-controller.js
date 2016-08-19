@@ -11,6 +11,5 @@
     this._getAppElement().innerHTML = this.view.viewNotes();
   };
 
-
   exports.NoteController = NoteController;
 })(this);
