@@ -3,8 +3,8 @@
   id_counter = 0;
   function Note(string) {
     this.text = string;
-    id_counter += 1;
     this.id = id_counter;
+    id_counter += 1;
   };
 
   Note.prototype.getText = function () {

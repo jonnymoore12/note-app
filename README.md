@@ -1,8 +1,9 @@
 # Note App
 Makers Week 7 - Further JavaScript
 
-Note model specification
+This is a work in progress. The application has not been completed.
 
+Note model specification:
 * Code is in a file called note-model.js.
 * Code is wrapped in the module pattern.
 * Uses the constructor and prototype pattern to define a note model object that can be instantiated.

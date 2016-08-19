@@ -22,8 +22,5 @@ describe('Note Controller', function(){
     isTrue(controller._getAppElement().innerHTML === view.viewNotes());
   });
 
-  
-
-
 
 });
